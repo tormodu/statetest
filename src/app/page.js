@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import styles from "./page.module.css";
 import { useCart } from "./store";
 export default function Home() {
@@ -63,6 +64,9 @@ export default function Home() {
             {item.quantity}
           </div>
         ))}
+        <Link href="/test">
+          <h3>Gå til handlekurven</h3>
+        </Link>
       </main>
     </div>
   );
